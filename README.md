@@ -1,3 +1,5 @@
+> **This fork embeds [Fastn](https://fastn.ai).** Every AgentSDR organization connects its own Slack, HubSpot and other apps on Settings → App integrations, and AgentSDR sends lead events that Fastn turns into integrations. See **[FASTN_EMBED.md](FASTN_EMBED.md)** for how it works and how to run it. Upstream: [Kandid-ai/AgentSDR](https://github.com/Kandid-ai/AgentSDR).
+
 <div align="center">
 
 <a href="https://agentsdr.ai">

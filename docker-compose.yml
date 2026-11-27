@@ -56,6 +56,15 @@ x-agentsdr: &agentsdr
     GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
     GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
 
+    # ── App integrations via Fastn (optional) ────────────────────────────────
+    # docs/integrations/fastn.mdx
+    FASTN_API_KEY: ${FASTN_API_KEY:-}
+    FASTN_IDV_SECRET: ${FASTN_IDV_SECRET:-}
+    FASTN_PRODUCT_CONNECTOR_ID: ${FASTN_PRODUCT_CONNECTOR_ID:-}
+    FASTN_PRODUCT_AUTH_METHOD_ID: ${FASTN_PRODUCT_AUTH_METHOD_ID:-}
+    FASTN_EVENTS_SECRET: ${FASTN_EVENTS_SECRET:-}
+    FASTN_BASE_URL: ${FASTN_BASE_URL:-https://api.fastn.dev}
+
     # ── Other (optional) ─────────────────────────────────────────────────────
     # Connections this app opens to PostgreSQL.
     DB_POOL_MAX: ${DB_POOL_MAX:-8}

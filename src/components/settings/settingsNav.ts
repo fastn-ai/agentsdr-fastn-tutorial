@@ -1,4 +1,5 @@
 import {
+  RiApps2Line,
   RiBookOpenLine,
   RiBuilding2Line,
   RiCpuLine,
@@ -41,6 +42,7 @@ export const SETTINGS_NAV: { label: string; items: SettingsNavItem[] }[] = [
       { href: "/settings/members", label: "Members", icon: RiGroupLine },
       { href: "/settings/teams", label: "Teams", icon: RiTeamLine },
       { href: "/settings/api-keys", label: "API keys", icon: RiKey2Line },
+      { href: "/settings/app-integrations", label: "App integrations", icon: RiApps2Line },
       { href: "/settings/ai-assistants", label: "AI assistants", icon: RiRobot2Line },
     ],
   },

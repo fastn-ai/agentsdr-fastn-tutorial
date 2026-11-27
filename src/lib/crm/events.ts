@@ -1,3 +1,4 @@
+import { forwardCrmEventAfterCommit } from "@/lib/fastn/events";
 import { crmEvents } from "./schema";
 import type { CrmTransaction } from "./repository";
 import { currentOrganizationId } from "@/lib/tenancy/scope";
@@ -57,6 +58,8 @@ export async function appendCrmEvent(
     .returning();
 
   if (!event) throw new Error("CRM event insert did not return a row");
+  // Interested / customer moves reach the organization's app integrations (Fastn).
+  forwardCrmEventAfterCommit(event);
   return event;
 }
 
